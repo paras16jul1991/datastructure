@@ -3,4 +3,8 @@
   <groupId>datastructure</groupId>
   <artifactId>datastructure</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
+	<build>
+		<defaultGoal>clean package</defaultGoal>
+	</build>
 </project>
