@@ -1,13 +1,14 @@
+package com.graph;
 
-import java.util.HashMap;
-import java.util.List;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.List;
 
 class Node {
 
 	public int id;
-	public List<Node> edges = new ArrayList<>();
+	public List<Node> edges = new ArrayList<Node>();
 
 	Node(int id) {
 		this.id = id;
@@ -36,7 +37,7 @@ public class GraphTraversal {
 		Node sourceNode = getNode(source);
 		Node targetNode = getNode(target);
 
-		LinkedList<Node> nextVisit = new LinkedList<>();
+		LinkedList<Node> nextVisit = new LinkedList<Node>();
 
 		nextVisit.add(sourceNode);
 
